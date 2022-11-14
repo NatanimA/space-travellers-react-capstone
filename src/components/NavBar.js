@@ -1,7 +1,9 @@
 import { NavLink } from 'react-router-dom';
+import logo from '../brand.png';
 
 const NavBar = () => (
   <header>
+    <img className="brand-logo" src={logo} alt="Brand" />
     <nav>
       <ul>
         <NavLink to="/"> Rockets</NavLink>

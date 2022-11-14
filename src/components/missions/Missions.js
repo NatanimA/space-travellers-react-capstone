@@ -8,7 +8,7 @@ export default class Missions extends React.Component {
 
   render() {
     return (
-      <section>
+      <section className="section-containers section-rockets">
         <div>
           <h1>Missions Page</h1>
         </div>

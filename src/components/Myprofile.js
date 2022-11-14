@@ -1,5 +1,5 @@
 const Myprofile = () => (
-  <section>
+  <section className="section-containers section-rockets">
     <div>
       <h1>My profile page</h1>
     </div>
