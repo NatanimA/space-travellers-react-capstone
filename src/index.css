@@ -49,6 +49,7 @@ nav {
 nav > ul {
   display: flex;
   justify-content: space-evenly;
+  margin: 1rem auto;
 }
 
 .App {
@@ -57,4 +58,10 @@ nav > ul {
 
 .section-containers {
   margin: 4rem auto;
+  border-top: 1px solid silver;
+  padding: 1rem;
+}
+
+.section-mission {
+  margin: 4rem 4rem 0rem 4rem;
 }

@@ -6,11 +6,7 @@ const URL = 'https://api.spacexdata.com/v3/missions';
 const initialState = [];
 
 export const fetchMissions = () => async (dispatch) => {
-  const response = await axios.get(URL).then(res => {
-    return res
-  }).catch(res => {
-    return res
-  });
+  const response = await axios.get(URL).then((res) => res).catch((res) => res);
 
   const data = await response.data;
 
