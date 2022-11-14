@@ -1,12 +1,5 @@
-import React from 'react';
-
-export default class Rockets extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = [];
-  }
-
-  render() {
+const Rockets = () =>  {
+ 
     return (
       <section className="section-containers section-rockets">
         <div className="rockets-container">
@@ -14,5 +7,7 @@ export default class Rockets extends React.Component {
         </div>
       </section>
     );
-  }
+  
 }
+
+export default Rockets

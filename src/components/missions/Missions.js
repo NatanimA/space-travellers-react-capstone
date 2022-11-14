@@ -1,12 +1,15 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
+import { fetchMissions } from '../../redux/missions/missions';
 
-export default class Missions extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = [];
-  }
 
-  render() {
+const Missions = () => {
+  const dispatch = useDispatch()
+  useEffect(() => {
+    dispatch(fetchMissions());
+  },[])
+  const state = useSelector(state => state.missions)
+  
     return (
       <section className="section-containers section-rockets">
         <div>
@@ -14,5 +17,6 @@ export default class Missions extends React.Component {
         </div>
       </section>
     );
-  }
 }
+
+export default Missions;
