@@ -11,21 +11,21 @@ const MissionsList = () => {
   }, [dispatch]);
   const state = useSelector((state) => state.missions);
   return (
-      <Table striped bordered hover>
-        <thead>
-            <tr>
-            <th>Missions</th>
-            <th>Description</th>
-            <th>Status</th>
-            <th />
-            </tr>
-        </thead>
-        <tbody>
-                {
-                    state.map((mission) => (<MissionItem key={mission.mission_id} missions={mission} />))
-                }
-        </tbody>
-      
+    <Table striped bordered hover>
+      <thead>
+        <tr>
+          <th>Missions</th>
+          <th>Description</th>
+          <th>Status</th>
+          <th />
+        </tr>
+      </thead>
+      <tbody>
+        {
+        state.map((mission) => (<MissionItem key={mission.mission_id} missions={mission} />))
+        }
+      </tbody>
+
     </Table>
   );
 };
