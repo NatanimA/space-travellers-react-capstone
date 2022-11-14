@@ -26,11 +26,6 @@ code {
     monospace;
 }
 
-.brand-logo {
-  height: 50px;
-  width: 50px;
-}
-
 header {
   position: fixed;
   top: 0;
@@ -42,6 +37,8 @@ header {
 
 .brand-logo {
   margin-left: 2rem;
+  height: 50px;
+  width: 50px;
 }
 
 nav {
