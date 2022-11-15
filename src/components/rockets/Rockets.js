@@ -8,8 +8,10 @@ const Rockets = () => {
 
   const dispatch = useDispatch();
   useEffect(() => {
-    dispatch(fetchRockets());
-  }, [dispatch]);
+    if (rockets.length < 1) {
+      dispatch(fetchRockets());
+    }
+  }, [dispatch, rockets.length]);
 
   return (
     <section className="section-containers section-rockets">
