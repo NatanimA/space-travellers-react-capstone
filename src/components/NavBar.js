@@ -3,7 +3,10 @@ import logo from '../brand.png';
 
 const NavBar = () => (
   <header>
-    <img className="brand-logo" src={logo} alt="Brand" />
+    <div>
+      <img className="brand-logo" src={logo} alt="Brand" />
+      <h1>Space Traveler&apos;s Hub</h1>
+    </div>
     <nav>
       <ul>
         <NavLink to="/"> Rockets</NavLink>
