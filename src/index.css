@@ -33,6 +33,13 @@ header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+}
+
+header > div {
+  display: flex;
+  align-items: center;
 }
 
 .brand-logo {
@@ -51,10 +58,55 @@ nav > ul {
   justify-content: space-evenly;
 }
 
+nav > ul > a {
+  text-decoration: none;
+  color: #007bff;
+}
+
+.active {
+  text-decoration: underline;
+}
+
 .App {
   height: 100vh;
 }
 
 .section-containers {
-  margin: 4rem auto;
+  margin: 5rem auto;
+}
+
+.section-rockets {
+  margin-right: 2rem;
+  margin-left: 2rem;
+}
+
+.rocket__item__container {
+  display: flex;
+  margin-top: 1em;
+}
+
+.rocket__item__container img {
+  width: 16em;
+  height: 13em;
+}
+
+.rocket__item__details {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin: 0 1em;
+}
+
+.rocket__item__details h2 {
+  margin-bottom: 0;
+}
+
+.rocket__item__details button {
+  align-self: flex-start;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  padding: 1em;
+  font-size: medium;
 }
