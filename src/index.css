@@ -131,3 +131,28 @@ nav > ul > a {
   padding: 0.5em;
   font-size: medium;
 }
+
+/* Profile */
+
+.profile__container {
+  display: flex;
+}
+
+.profile__container > div {
+  width: 50%;
+  margin: 1em;
+}
+
+.list-group-item {
+  border: 2px solid #ebebeb;
+  padding: 1.5em;
+  font-size: large;
+  color: #3f4245;
+}
+
+.alert-danger {
+  color: #f00;
+  font-size: large;
+  font-style: italic;
+  font-weight: bold;
+}
