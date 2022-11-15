@@ -34,6 +34,13 @@ header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+}
+
+header > div {
+  display: flex;
+  align-items: center;
 }
 
 .brand-logo {
@@ -53,6 +60,15 @@ nav > ul {
   margin: 1rem auto;
 }
 
+nav > ul > a {
+  text-decoration: none;
+  color: #007bff;
+}
+
+.active {
+  text-decoration: underline;
+}
+
 .App {
   height: 100vh;
 }
@@ -65,4 +81,62 @@ nav > ul {
 
 .section-mission {
   margin: 4rem 4rem 0rem 4rem;
+  margin: 5rem auto;
+}
+
+.section-rockets {
+  margin-right: 2rem;
+  margin-left: 2rem;
+}
+
+.rocket__item__container {
+  display: flex;
+  margin: 2em;
+}
+
+.rocket__item__container img {
+  width: 16em;
+  height: 12em;
+}
+
+.rocket__item__details {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin: 0 1em;
+}
+
+.rocket__item__details > h2 {
+  margin-bottom: 0;
+}
+
+.rocket__item__details > p {
+  line-height: 1.5em;
+}
+
+.reserved__btn {
+  align-self: flex-start;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  padding: 0.5em;
+  font-size: medium;
+}
+
+.reserved__tag {
+  background-color: #18a2b8;
+  color: #fff;
+  padding: 0.1em;
+  border-radius: 5px;
+  margin-right: 0.5em;
+}
+
+.cancel__reserved {
+  align-self: flex-start;
+  background-color: #fff;
+  border: 2px solid #000;
+  border-radius: 3px;
+  padding: 0.5em;
+  font-size: medium;
 }
