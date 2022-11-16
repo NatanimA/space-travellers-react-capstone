@@ -139,11 +139,11 @@ nav > ul > a {
   font-size: medium;
 }
 
-
 .btn {
   white-space: nowrap;
   z-index: -1;
 }
+
 /* Profile */
 
 .profile__container {
