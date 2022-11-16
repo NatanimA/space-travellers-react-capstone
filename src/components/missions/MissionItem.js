@@ -4,20 +4,20 @@ import PropTypes from 'prop-types';
 import { useDispatch } from 'react-redux';
 import { toggleMissions } from '../../redux/missions/missions';
 
-const MissionItem = ({missions}) => {
-  const {
-    mission_id, mission_name, description, member,
-  } = missions;
+const MissionItem = ({ missions }) => {
+  const missionID = missions.mission_id;
+  const missionName = missions.mission_name;
+  const { description, member } = missions;
   const dispatch = useDispatch();
 
   return (
     <tr>
-      <td>{mission_name}</td>
+      <td>{missionName}</td>
       <td>{description}</td>
       <td>{member ? <Button variant="primary" disabled>Active Member</Button> : <Button variant="secondary">Not a member</Button>}</td>
       <td>
-        {member ? <Button variant="outline-danger" size="lg" id={mission_id} onClick={() => { dispatch(toggleMissions(mission_id)); }}>Leave Mission</Button>
-          : <Button variant="outline-dark" size="lg" id={mission_id} onClick={() => { dispatch(toggleMissions(mission_id)); }}>Join Mission</Button>}
+        {member ? <Button variant="outline-danger" size="lg" id={missionID} onClick={() => { dispatch(toggleMissions(missionID)); }}>Leave Mission</Button>
+          : <Button variant="outline-dark" size="lg" id={missionID} onClick={() => { dispatch(toggleMissions(missionID)); }}>Join Mission</Button>}
       </td>
 
     </tr>
@@ -29,7 +29,7 @@ MissionItem.propTypes = {
     PropTypes.string,
     PropTypes.object,
     PropTypes.bool,
-    PropTypes.number
+    PropTypes.number,
   ]).isRequired,
 };
 

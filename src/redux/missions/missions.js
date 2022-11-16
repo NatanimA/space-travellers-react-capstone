@@ -10,7 +10,7 @@ export const fetchMissions = () => async (dispatch) => {
   const response = await axios.get(URL).then((res) => res).catch((res) => res);
   const missions = [];
   const data = await response.data;
-  data.map((mission) => {
+  data.forEach((mission) => {
     missions.push({
       mission_id: mission.mission_id,
       mission_name: mission.mission_name,
@@ -37,9 +37,14 @@ const missionsReducer = (state = initialState, action) => {
     case FETCH_MISSIONS:
       return action.payload;
     case TOGGLE_MISSIONS:
-      return state.map((mission) => ((mission.mission_id === action.id) ? mission.member
-        ? { ...mission, member: false } : { ...mission, member: true }
-        : { ...mission }));
+      return state.map((mission) => {
+        if (mission.mission_id === action.id) {
+          if (mission.member) {
+            return { ...mission, member: false };
+          }
+          return { ...mission, member: true };
+        } return { ...mission };
+      });
     default:
       return state;
   }
