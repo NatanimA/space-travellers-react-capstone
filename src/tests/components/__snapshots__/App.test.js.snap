@@ -21,25 +21,33 @@ Object {
           </div>
           <nav>
             <ul>
-              <a
-                aria-current="page"
-                class="active"
-                href="/"
+              <li>
+                <a
+                  aria-current="page"
+                  class="active"
+                  href="/"
+                >
+                   Rockets
+                </a>
+              </li>
+              <li
+                class="nav-cutter"
               >
-                 Rockets
-              </a>
-              <a
-                class=""
-                href="/missions"
-              >
-                Missions
-              </a>
-              <a
-                class=""
-                href="/profile"
-              >
-                My profile
-              </a>
+                <a
+                  class=""
+                  href="/missions"
+                >
+                  Missions
+                </a>
+              </li>
+              <li>
+                <a
+                  class="my-profile"
+                  href="/profile"
+                >
+                  My profile
+                </a>
+              </li>
             </ul>
           </nav>
         </header>
@@ -71,25 +79,33 @@ Object {
         </div>
         <nav>
           <ul>
-            <a
-              aria-current="page"
-              class="active"
-              href="/"
+            <li>
+              <a
+                aria-current="page"
+                class="active"
+                href="/"
+              >
+                 Rockets
+              </a>
+            </li>
+            <li
+              class="nav-cutter"
             >
-               Rockets
-            </a>
-            <a
-              class=""
-              href="/missions"
-            >
-              Missions
-            </a>
-            <a
-              class=""
-              href="/profile"
-            >
-              My profile
-            </a>
+              <a
+                class=""
+                href="/missions"
+              >
+                Missions
+              </a>
+            </li>
+            <li>
+              <a
+                class="my-profile"
+                href="/profile"
+              >
+                My profile
+              </a>
+            </li>
           </ul>
         </nav>
       </header>

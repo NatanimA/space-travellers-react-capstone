@@ -9,10 +9,18 @@ const NavBar = () => (
     </div>
     <nav>
       <ul>
-        <NavLink to="/"> Rockets</NavLink>
-        <NavLink to="/missions">Missions</NavLink>
-        <div className="nav-cutter" />
-        <NavLink className="my-profile" to="/profile">My profile</NavLink>
+        <li>
+          <NavLink to="/"> Rockets</NavLink>
+        </li>
+
+        <li className="nav-cutter">
+          <NavLink to="/missions">Missions</NavLink>
+        </li>
+
+        <li>
+          <NavLink className="my-profile" to="/profile">My profile</NavLink>
+        </li>
+
       </ul>
     </nav>
   </header>

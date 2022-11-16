@@ -60,7 +60,11 @@ nav > ul {
   margin: 1rem auto;
 }
 
-nav > ul > a {
+li {
+ list-style-type: none;
+}
+
+nav > ul > li > a {
   text-decoration: none;
   color: #007bff;
 }
@@ -171,6 +175,6 @@ nav > ul > a {
 }
 
 .nav-cutter {
-  font-size: 20px;
-  border-left: 1px solid black;
+  padding-right: 1rem;
+  border-right: 1px solid black;
 }
