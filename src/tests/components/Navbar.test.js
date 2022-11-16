@@ -1,12 +1,7 @@
-// eslint-disable-next-line
 import renderer from 'react-test-renderer';
-// eslint-disable-next-line
 import { BrowserRouter } from 'react-router-dom';
-// eslint-disable-next-line
 import userEvent from '@testing-library/user-event';
-// eslint-disable-next-line
 import { render, screen } from '@testing-library/react';
-// eslint-disable-next-line
 import NavBar from '../../components/NavBar';
 
 describe('Tests NavBar Component', () => {

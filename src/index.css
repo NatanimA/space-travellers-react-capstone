@@ -35,6 +35,7 @@ header {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  padding: 0.5em;
 }
 
 header > div {
@@ -78,7 +79,7 @@ nav > ul > li > a {
 }
 
 .section-containers {
-  margin: 4rem auto;
+  margin: 5rem auto;
   border-top: 1px solid silver;
   padding: 1rem;
 }
@@ -177,4 +178,34 @@ nav > ul > li > a {
 .nav-cutter {
   padding-right: 1rem;
   border-right: 1px solid black;
+}
+
+@media screen and (max-width: 768px) {
+  header {
+    display: block;
+  }
+
+  nav {
+    width: 50%;
+  }
+
+  nav > ul > li {
+    margin-right: 1em;
+  }
+
+  .rockets-container {
+    margin-top: 4em;
+  }
+
+  .rocket__item__container {
+    display: block;
+  }
+
+  .rocket__item__details {
+    margin: 1em 0;
+  }
+
+  .profile__container > div {
+    margin-top: 2em;
+  }
 }
