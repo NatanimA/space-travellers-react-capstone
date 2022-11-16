@@ -49,8 +49,9 @@ header > div {
 }
 
 nav {
-  width: 50%;
+  width: 30%;
   text-align: center;
+  margin-right: 2rem;
 }
 
 nav > ul {
@@ -167,4 +168,8 @@ nav > ul > a {
   font-size: large;
   font-style: italic;
   font-weight: bold;
+}
+
+.nav-cutter {
+  font-size: 20px;
 }

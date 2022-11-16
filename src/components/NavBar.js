@@ -11,6 +11,7 @@ const NavBar = () => (
       <ul>
         <NavLink to="/"> Rockets</NavLink>
         <NavLink to="/missions">Missions</NavLink>
+        <div className='nav-cutter'>|</div>
         <NavLink to="/profile">My profile</NavLink>
       </ul>
     </nav>
