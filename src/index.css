@@ -28,13 +28,13 @@ code {
 
 header {
   position: fixed;
+  background-color: #fff;
   top: 0;
   width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  background-color: #fff;
 }
 
 header > div {
@@ -56,6 +56,7 @@ nav {
 nav > ul {
   display: flex;
   justify-content: space-evenly;
+  margin: 1rem auto;
 }
 
 nav > ul > a {
@@ -72,7 +73,13 @@ nav > ul > a {
 }
 
 .section-containers {
-  margin: 5rem auto;
+  margin: 4rem auto;
+  border-top: 1px solid silver;
+  padding: 1rem;
+}
+
+.section-mission {
+  margin: 4rem 4rem 0 4rem;
 }
 
 .section-rockets {
@@ -130,4 +137,9 @@ nav > ul > a {
   border-radius: 3px;
   padding: 0.5em;
   font-size: medium;
+}
+
+.btn {
+  white-space: nowrap;
+  z-index: -1;
 }

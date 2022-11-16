@@ -1,18 +1,12 @@
 import React from 'react';
+import MissionsList from './MissionsList';
 
-export default class Missions extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = [];
-  }
+const Missions = () => (
+  <section className="section-containers section-mission">
+    <div>
+      <MissionsList />
+    </div>
+  </section>
+);
 
-  render() {
-    return (
-      <section className="section-containers section-rockets">
-        <div>
-          <h1>Missions Page</h1>
-        </div>
-      </section>
-    );
-  }
-}
+export default Missions;
