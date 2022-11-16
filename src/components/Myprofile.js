@@ -5,7 +5,8 @@ import { useSelector } from 'react-redux';
 
 const Myprofile = () => {
   const rockets = useSelector((state) => state.rockets).filter((val) => val.reserved === true);
-  const missions = useSelector((state) => state.missions).filter((mission) => mission.member === true);
+  const missions = useSelector((state) => state.missions)
+    .filter((mission) => mission.member === true);
 
   return (
     <section className="section-containers section-rockets profile__container">
