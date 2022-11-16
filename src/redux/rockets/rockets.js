@@ -7,7 +7,7 @@ const TOGGLE_RESERVED = 'spaceTravellers/rockets/toggleReserved';
 
 const API = 'https://api.spacexdata.com/v3/rockets';
 
-export const fetchRockets = createAsyncThunk(GET_ROCKETS, async () => {
+export const apiCall = async () => {
   const data = [];
   const books = await axios.get(API);
   books.data.map((val) => data.push({
@@ -18,7 +18,9 @@ export const fetchRockets = createAsyncThunk(GET_ROCKETS, async () => {
     reserved: false,
   }));
   return data;
-});
+};
+
+export const fetchRockets = createAsyncThunk(GET_ROCKETS, apiCall);
 
 export const toggleReserved = (id) => (
   {
