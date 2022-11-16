@@ -82,12 +82,12 @@ nav > ul > a {
 
 .rocket__item__container {
   display: flex;
-  margin-top: 1em;
+  margin: 2em;
 }
 
 .rocket__item__container img {
   width: 16em;
-  height: 13em;
+  height: 12em;
 }
 
 .rocket__item__details {
@@ -97,16 +97,37 @@ nav > ul > a {
   margin: 0 1em;
 }
 
-.rocket__item__details h2 {
+.rocket__item__details > h2 {
   margin-bottom: 0;
 }
 
-.rocket__item__details button {
+.rocket__item__details > p {
+  line-height: 1.5em;
+}
+
+.reserved__btn {
   align-self: flex-start;
   background-color: #007bff;
   color: #fff;
   border: none;
   border-radius: 3px;
-  padding: 1em;
+  padding: 0.5em;
+  font-size: medium;
+}
+
+.reserved__tag {
+  background-color: #18a2b8;
+  color: #fff;
+  padding: 0.1em;
+  border-radius: 5px;
+  margin-right: 0.5em;
+}
+
+.cancel__reserved {
+  align-self: flex-start;
+  background-color: #fff;
+  border: 2px solid #000;
+  border-radius: 3px;
+  padding: 0.5em;
   font-size: medium;
 }
