@@ -1,22 +1,36 @@
 import React from 'react';
 import Button from 'react-bootstrap/Button';
+import PropTypes from 'prop-types';
 import { useDispatch } from 'react-redux';
 import { toggleMissions } from '../../redux/missions/missions';
 
-const MissionItem = (props) => {
-  const { missions } = props;
-  const dispatch = useDispatch()
-  
+const MissionItem = ({missions}) => {
+  const {
+    mission_id, mission_name, description, member,
+  } = missions;
+  const dispatch = useDispatch();
+
   return (
     <tr>
-      <td>{missions.mission_name}</td>
-      <td>{missions.description}</td>
-      <td>{missions.member ? <Button  variant="primary" disabled >Active Member</Button> : <Button variant="secondary">Not a member</Button>}</td>
-      <td>{missions.member ? <Button variant="outline-danger" size='lg' id={missions.mission_id} onClick={() => { dispatch(toggleMissions(missions.mission_id))}}>Leave Mission</Button> 
-        : <Button variant="outline-dark" size='lg' id={missions.mission_id} onClick={() => { dispatch(toggleMissions(missions.mission_id)) }}>Join Mission</Button>}</td>
+      <td>{mission_name}</td>
+      <td>{description}</td>
+      <td>{member ? <Button variant="primary" disabled>Active Member</Button> : <Button variant="secondary">Not a member</Button>}</td>
+      <td>
+        {member ? <Button variant="outline-danger" size="lg" id={mission_id} onClick={() => { dispatch(toggleMissions(mission_id)); }}>Leave Mission</Button>
+          : <Button variant="outline-dark" size="lg" id={mission_id} onClick={() => { dispatch(toggleMissions(mission_id)); }}>Join Mission</Button>}
+      </td>
 
     </tr>
   );
+};
+
+MissionItem.propTypes = {
+  missions: PropTypes.oneOfType([
+    PropTypes.string,
+    PropTypes.object,
+    PropTypes.bool,
+    PropTypes.number
+  ]).isRequired,
 };
 
 export default MissionItem;

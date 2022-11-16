@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const FETCH_MISSIONS = 'FETCH-MISSIONS';
-const TOGGLE_MISSIONS = 'TOGGLE_MISSIONS'
+const TOGGLE_MISSIONS = 'TOGGLE_MISSIONS';
 const URL = 'https://api.spacexdata.com/v3/missions';
 
 const initialState = [];
@@ -29,17 +29,17 @@ export const fetchMissions = () => async (dispatch) => {
 
 export const toggleMissions = (id) => ({
   type: TOGGLE_MISSIONS,
-  id
-})
+  id,
+});
 
 const missionsReducer = (state = initialState, action) => {
   switch (action.type) {
     case FETCH_MISSIONS:
       return action.payload;
     case TOGGLE_MISSIONS:
-      return state.map((mission) => (mission.mission_id === action.id) ? mission.member ? 
-      {...mission,member:false} : {...mission,member:true} 
-      : {...mission})
+      return state.map((mission) => ((mission.mission_id === action.id) ? mission.member
+        ? { ...mission, member: false } : { ...mission, member: true }
+        : { ...mission }));
     default:
       return state;
   }

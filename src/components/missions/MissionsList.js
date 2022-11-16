@@ -8,11 +8,11 @@ const MissionsList = () => {
   const state = useSelector((state) => state.missions);
   const dispatch = useDispatch();
   useEffect(() => {
-    if(state.length < 1){
+    if (state.length < 1) {
       dispatch(fetchMissions());
     }
-  }, [dispatch , state.length]);
-  
+  }, [dispatch, state.length]);
+
   return (
     <Table striped bordered hover>
       <thead>
