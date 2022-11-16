@@ -22,7 +22,7 @@ describe('Tests NavBar Component', () => {
       </BrowserRouter>,
     );
     const list = screen.getByRole('list').childElementCount;
-    expect(list).toEqual(4);
+    expect(list).toEqual(3);
     const link = screen.getByText('Missions');
     userEvent.click(link);
     expect(link.closest('a')).toHaveAttribute('class', 'active');
