@@ -5,11 +5,14 @@ import { fetchMissions } from '../../redux/missions/missions';
 import MissionItem from './MissionItem';
 
 const MissionsList = () => {
+  const state = useSelector((state) => state.missions);
   const dispatch = useDispatch();
   useEffect(() => {
-    dispatch(fetchMissions());
-  }, [dispatch]);
-  const state = useSelector((state) => state.missions);
+    if(state.length < 1){
+      dispatch(fetchMissions());
+    }
+  }, [dispatch , state.length]);
+  
   return (
     <Table striped bordered hover>
       <thead>

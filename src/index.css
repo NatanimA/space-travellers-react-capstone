@@ -35,7 +35,6 @@ header {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  background-color: #fff;
 }
 
 header > div {
@@ -81,7 +80,6 @@ nav > ul > a {
 
 .section-mission {
   margin: 4rem 4rem 0rem 4rem;
-  margin: 5rem auto;
 }
 
 .section-rockets {
@@ -139,4 +137,9 @@ nav > ul > a {
   border-radius: 3px;
   padding: 0.5em;
   font-size: medium;
+}
+
+.btn {
+  white-space: nowrap;
+  z-index: -1;
 }
