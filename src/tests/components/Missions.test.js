@@ -7,12 +7,12 @@ import store from '../../redux/configureStore';
 import Missions from '../../components/missions/Missions';
 
 test('renders rockets component snapshot', () => {
-    const { asFragment } = render(
-        <Provider store={store}>
-            <BrowserRouter>
-                <Missions />
-            </BrowserRouter>
-        </Provider>,
-    );
-    expect(asFragment()).toMatchSnapshot();
+  const { asFragment } = render(
+    <Provider store={store}>
+      <BrowserRouter>
+        <Missions />
+      </BrowserRouter>
+    </Provider>,
+  );
+  expect(asFragment()).toMatchSnapshot();
 });
