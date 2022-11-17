@@ -1,32 +1,52 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Project Name
+# Space Travellers
 
-> Description the project.
-
+> A web application for a company that provides commercial and scientific space travel services. The application will allow users to book rockets and join selected space missions.
 
 ## Built With
 
-- Major languages
-- Frameworks
-- Technologies used
+- ReactJS
+- Redux
+- SpaceX API
+- JEST
 
 ## Live Demo (if available)
 
-[Live Demo Link](https://livedemo.com)
-
+<!-- [Live Demo Link]( https://libercosoft.github.io/movie-capstone-app/dist/) -->
 
 ## Getting Started
 
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
+To get a local copy up and running any of these commands in your terminal.
 
+```
+git clone  https://github.com/NatanimA/space-travellers-react-capstone.git - https
 
-To get a local copy up and running follow these simple example steps.
+git clone  git@github.com:NatanimA/space-travellers-react-capstone.git     - ssh
+```
+
+```
+git checkout -b Development
+```
+
+```
+git pull origin development
+```
+
+```
+npm run start
+```
 
 ### Prerequisites
 
+- [SpaceX API](https://api.spacexdata.com/v3)
+- `Webpack installation`
+- `SSH key for github linked to git on local environment`
+- `Html & CSS basics`
+
 ### Setup
+
+- If it suits you, on your local computer, create a directory in your preferred location (e.g in the Desktop or Document directory)
 
 ### Install
 
@@ -34,23 +54,29 @@ To get a local copy up and running follow these simple example steps.
 
 ### Run tests
 
+- Install project dependencies (libraries) using `npm install` command
+- Run webpack build using npm run build command
+- Run webpack dev server using npm run start command
+
 ### Deployment
-
-
 
 ## Authors
 
 👤 **Author1**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+## Kolapo Akinrinlola
+
+- GitHub: [@LIBERCOSOFT](https://github.com/LIBERCOSOFT)
+- Twitter: [@Gerfieldt](https://twitter.com/Gerfieldt)
+- LinkedIn: [Kolapo Akinrinlola](https://linkedin.com/in/linkedinhandle)
 
 👤 **Author2**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+## Natanim Abesha
+
+- GitHub: [@NatanimA](https://github.com/NatanimA)
+- Twitter: [@Natanim_](https://twitter.com/Natanim_)
+- LinkedIn: [Natanim Abesha](https://www.linkedin.com/in/natanim-abesha-04a39823a/)
 
 ## 🤝 Contributing
 
@@ -66,10 +92,9 @@ Give a ⭐️ if you like this project!
 
 - Hat tip to anyone whose code was used
 - Inspiration
-- etc
+- microverseinc
+- [SpaceX](https://api.spacexdata.com/v3)
 
 ## 📝 License
 
-This project is [MIT](./LICENSE) licensed.
-
-_NOTE: we recommend using the [MIT license](https://choosealicense.com/licenses/mit/) - you can set it up quickly by [using templates available on GitHub](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository). You can also use [any other license](https://choosealicense.com/licenses/) if you wish._
+This project is [MIT](./MIT.md) licensed.
