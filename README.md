@@ -11,9 +11,8 @@
 - SpaceX API
 - JEST
 
-## Live Demo (if available)
-
-<!-- [Live Demo Link]( https://libercosoft.github.io/movie-capstone-app/dist/) -->
+## Live Demo 
+[space-x](https://natanim-space-x.netlify.app/) 
 
 ## Getting Started
 
